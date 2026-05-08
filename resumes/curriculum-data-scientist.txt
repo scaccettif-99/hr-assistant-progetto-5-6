@@ -1,0 +1,28 @@
+### GIULIA MARCHETTI
+Data Scientist Senior  
+Email: giulia.marchetti@email.com  
+Tel: +39 338 7654321  
+Bologna, Italia  
+LinkedIn: linkedin.com/in/giuliamarchetti  
+GitHub: github.com/giuliamarchetti
+
+### PROFILO PROFESSIONALE
+Data Scientist Senior con 8 anni di esperienza nell'analisi dati e nello sviluppo di modelli di machine learning. Specializzata in Natural Language Processing, computer vision e predictive analytics. Forte background accademico con dottorato di ricerca in Intelligenza Artificiale e pubblicazioni su riviste internazionali.
+
+### ESPERIENZA LAVORATIVA
+Data Scientist Senior - AILab Italia S.p.A., Bologna (2021-presente)
+Sviluppo di modelli di NLP per l'analisi automatica di documenti legali con accuratezza del 94%. Progettazione di pipeline di machine learning end-to-end su Google Cloud Platform. Mentoring di 4 data scientist junior e coordinamento dei progetti di ricerca applicata.
+
+Data Scientist - DataDriven S.r.l., Milano (2018-2021)
+Implementazione di modelli predittivi per la churn prediction con miglioramento della retention del 25%. Sviluppo di sistemi di raccomandazione basati su collaborative filtering. Creazione di dashboard interattive con Plotly e Streamlit per la visualizzazione dei risultati.
+
+Research Assistant - Università di Bologna (2016-2018)
+Ricerca nel campo del deep learning applicato alla computer vision. Pubblicazione di 3 paper su conferenze internazionali di AI. Sviluppo di dataset annotati per il training di modelli di object detection.
+
+### COMPETENZE TECNICHE
+Python, R, TensorFlow, PyTorch, Scikit-learn, Pandas, NumPy, SQL, Spark, Google Cloud Platform, AWS SageMaker, Docker, MLflow, NLP, Computer Vision, Deep Learning
+
+### FORMAZIONE
+Dottorato in Intelligenza Artificiale - Università di Bologna (2018)
+Laurea Magistrale in Data Science - Università di Bologna (2015)
+Laurea Triennale in Matematica - Università di Padova (2013)

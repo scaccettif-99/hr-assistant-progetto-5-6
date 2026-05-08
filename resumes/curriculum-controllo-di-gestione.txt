@@ -1,0 +1,27 @@
+### MARIO ROSSI
+Controller di Gestione Senior  
+Via Roma 123, Milano  
+Tel: +39 123 456 7890  
+Email: mario.rossi@email.com  
+LinkedIn: linkedin.com/in/mariorossi
+
+### PROFILO PROFESSIONALE
+Controller di Gestione Senior con 14 anni di esperienza nel controllo di gestione industriale e nella pianificazione finanziaria. Specializzato nell'analisi dei costi, budgeting, forecasting e reporting direzionale. Comprovata capacità di implementare sistemi di controllo di gestione e di supportare il management nelle decisioni strategiche.
+
+### ESPERIENZA LAVORATIVA
+Controller di Gestione Senior - Industria Meccanica Italiana S.p.A., Milano (2018-presente)
+Responsabile del controllo di gestione per un gruppo con fatturato di 200M€. Implementazione di un sistema di cost accounting che ha migliorato la precisione dell'analisi dei costi del 40%. Coordinamento del processo di budgeting annuale e forecasting trimestrale.
+
+Controller di Gestione - Manifattura Avanzata S.r.l., Bergamo (2013-2018)
+Analisi degli scostamenti budget-consuntivo e preparazione di report mensili per il CDA. Sviluppo di modelli di pricing basati sull'analisi dei costi industriali. Implementazione di dashboard di Business Intelligence con SAP BW.
+
+Analista Finanziario Junior - Consulenza & Partners, Milano (2010-2013)
+Supporto nella preparazione di business plan e analisi di fattibilità. Analisi di bilancio e valutazione d'azienda. Partecipazione a progetti di due diligence.
+
+### COMPETENZE TECNICHE
+SAP CO/FI, SAP BW, Microsoft Excel avanzato, Power BI, Oracle Hyperion, SQL, VBA, Analisi dei costi, Budgeting, Forecasting, Reporting direzionale
+
+### FORMAZIONE
+MBA - SDA Bocconi, Milano (2015)
+Laurea Magistrale in Economia e Finanza - Università Bocconi, Milano (2010)
+Laurea Triennale in Economia Aziendale - Università degli Studi di Milano (2008)

@@ -1,0 +1,26 @@
+### ANDREA BIANCHI
+Information Security Manager  
+Email: andrea.bianchi@email.com  
+Tel: +39 345 9876543  
+Roma, Italia  
+LinkedIn: linkedin.com/in/andreabianchi
+
+### PROFILO PROFESSIONALE
+Information Security Manager con 12 anni di esperienza nella protezione di infrastrutture IT e nella gestione della sicurezza informatica aziendale. Specializzato in penetration testing, analisi delle vulnerabilità e implementazione di framework di sicurezza conformi agli standard ISO 27001 e NIST. Certificato CISSP, CEH e CISM.
+
+### ESPERIENZA LAVORATIVA
+Information Security Manager - TechSecure S.p.A., Roma (2019-presente)
+Gestione del team di sicurezza informatica composto da 8 specialisti. Implementazione di un programma di vulnerability management che ha ridotto gli incidenti di sicurezza del 75%. Sviluppo e implementazione di politiche di sicurezza conformi al GDPR.
+
+Security Analyst Senior - CyberDefense Italia, Milano (2015-2019)
+Conduzione di penetration test su applicazioni web e infrastrutture di rete. Implementazione di soluzioni SIEM per il monitoraggio in tempo reale delle minacce. Gestione degli incidenti di sicurezza e coordinamento della risposta.
+
+### COMPETENZE TECNICHE
+Penetration Testing, Vulnerability Assessment, SIEM, Firewall Management, IDS/IPS, Crittografia, Analisi Malware, Forensics, Cloud Security AWS e Azure
+
+### CERTIFICAZIONI
+CISSP, CEH (Certified Ethical Hacker), CISM, CompTIA Security+, AWS Security Specialty
+
+### FORMAZIONE
+Laurea Magistrale in Sicurezza Informatica - Università La Sapienza, Roma (2011)
+Laurea Triennale in Informatica - Università di Roma Tre (2009)

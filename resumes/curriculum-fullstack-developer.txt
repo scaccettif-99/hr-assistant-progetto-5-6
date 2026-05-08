@@ -1,0 +1,34 @@
+### FRANCESCO SCACCETTI
+Full Stack Web Developer & ESG Consultant  
+Email: scaccettif@gmail.com  
+Tel: +39 XXX XXXXXXX  
+Terni/Valnerina, Umbria, Italia  
+LinkedIn: linkedin.com/in/francescoscaccetti
+
+### PROFILO PROFESSIONALE
+Full Stack Web Developer con specializzazione in Laravel, Bootstrap, JavaScript e PHP, e consulente in ambito ESG e sostenibilità. Profilo interdisciplinare con Master in European Studies e Master in corso in D-ESG Impact Management presso Sapienza/FDC Consulting. Attualmente in specializzazione AI/Python presso Aulab Hackademy con focus su LLM, RAG, Agents, OpenAI e Ollama. Vice Presidente di Inter_Valli APS ASD, associazione impegnata nella valorizzazione della Valnerina attraverso progetti Erasmus+ e iniziative ambientali. Multilingue: italiano, inglese, portoghese e spagnolo.
+
+### ESPERIENZA LAVORATIVA
+Freelance Full Stack Web Developer (2024-presente)
+Sviluppo di siti web ed e-commerce in Laravel con UI/UX avanzata. Realizzazione del sito Oppela!! Fashion Boutique con hero accordion, clip-path dividers, masonry gallery, lightbox e integrazione WhatsApp. Acquisizione clienti tramite cold-outreach e materiali di marketing digitale personalizzati.
+
+Vice Presidente - Inter_Valli APS ASD, Ferentillo (2012-presente)
+Organizzazione di youth exchange Erasmus+ tra Italia e Irlanda sul tema della sovranità alimentare. Ideazione e organizzazione di Nera Boulder, contest di street boulder itinerante nei borghi della Valnerina con crescita da 47 a 270 partecipanti in 10 edizioni. Sviluppo del progetto BiodiversaMente Valnerina per l'educazione ambientale.
+
+Ricercatore - Gestione Risorse Idriche (2020-2023)
+Ricerca sul campo sulla gestione delle risorse idriche in Messico, Brasile e Umbria. Lavoro con comunità indigene in Brasile su tematiche ambientali. Presentazione pubblica dei risultati di ricerca.
+
+### COMPETENZE TECNICHE
+PHP, Laravel, JavaScript, Bootstrap, MySQL, HTML/CSS, Git/GitHub, Python, OpenAI API, Ollama, LLM, RAG, VS Code, Partita IVA
+
+### COMPETENZE TRASVERSALI
+Project management Erasmus+, ESG consulting, scrittura progettuale EU, comunicazione multilingue, organizzazione eventi, marketing digitale
+
+### FORMAZIONE
+Specializzazione AI/Python - Aulab Hackademy (2025-in corso)
+Master D-ESG Impact Management - Sapienza/FDC Consulting (2025-2027)
+Master con lode in European Studies - doppio titolo Italia/Messico
+Laurea in Giurisprudenza
+
+### PROGETTI IN CORSO
+Co-fondatore di AlveUs Impresa Sociale SRL, startup in fase di costituzione focalizzata su gestione progetti Erasmus+/ESC, consulenza ESG e servizi digitali.
