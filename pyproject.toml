@@ -8,13 +8,12 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.13,<4.0.0"
 dependencies = [
-
-    "openai (>=1.59.9,<2.0.0)",
-    "ollama (>=0.4.6,<0.5.0)",
-    "chainlit (>=2.0.5,<3.0.0)",
-    "scikit-learn (>=1.6.1,<2.0.0)",
-    "langchain-openai (>=0.3.2,<0.4.0)",
-    "chromadb (>=1.5.9,<2.0.0)"
+    "chromadb (>=1.5.9,<2.0.0)",
+    "openai (>=2.36.0,<3.0.0)",
+    "chainlit (==2.4.1)",
+    "langchain-openai (>=1.2.1,<2.0.0)",
+    "scikit-learn (>=1.8.0,<2.0.0)"
+    
 ]
 
 [build-system]

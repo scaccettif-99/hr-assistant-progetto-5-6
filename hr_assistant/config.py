@@ -7,7 +7,7 @@ class Config:
     DOCUMENTS_DIR = "resumes"
     COLLECTION_NAME = "CVs"
     PERSISTENT_DIR = "data/chromadb"
-    MODEL_NAME = "text-embedding-3-large"
+    MODEL_NAME = "text-embedding-3-small"
     OPENAI_KEY = os.getenv("OPENAI_API_KEY")
     # LLM OpenAI
     LLM_MODEL = "gpt-4o"
