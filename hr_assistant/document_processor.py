@@ -39,16 +39,17 @@ class DocumentProcessor:
             txt = file.read()
             # OLD 
             # chunks = file.read().replace("\n", ".").split("### ") --> separator based, ora siamo avanti con semantic
-            chunks = SemanticChunking.chunk_it(txt) 
+            sc = SemanticChunking()
+            chunks = sc.chunk_text(txt)
             file_metadata = DocumentProcessor.get_document_metadata(file_path)
 
-        for chunk in chunks:                                           #ciclo sui chunks
+            for chunk in chunks:                                           #ciclo sui chunks
                 if not chunk.isspace() and not chunk == "":        #evita chunk vuoti
                     documents.append(chunk)
                     metadatas.append(file_metadata)
                     ids.append(str(uuid.uuid4()))
 
-                    return documents, metadatas, ids
+        return documents, metadatas, ids
 
     @staticmethod
     def process_documents(db):

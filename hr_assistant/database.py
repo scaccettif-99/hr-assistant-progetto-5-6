@@ -10,6 +10,7 @@ class Database:
             api_key=Config.OPENAI_KEY, model_name=Config.MODEL_NAME
         )
 
+        # Inizializza il client persistente su disco
         self.client = chromadb.PersistentClient(path=Config.PERSISTENT_DIR)
         self.collection = self.client.get_or_create_collection(
             name=Config.COLLECTION_NAME, embedding_function=self.openai_ef

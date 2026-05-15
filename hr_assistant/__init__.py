@@ -71,10 +71,15 @@ async def handle_message(message: cl.Message):
         os.path.join(Config.DOCUMENTS_DIR, filename), 200
     )
 
-    context = f"CONTESTO: nome file {results['metadatas'][0][0]['source']} ecco il paragrafo piu' significativo: {results['documents'][0][0]}"
-
     candidate_name = await LLMHelper.get_candidate_name(context_lines)
-    prompt = LLMHelper.create_prompt(context, user_question, candidate_name)
+    context = (
+        f"CONTESTO: nome file {results['metadatas'][0][0]['source']} "
+        f"ecco il paragrafo piu' significativo: {results['documents'][0][0]}, "
+        f"ecco la parte iniziale del file con le informazioni del candidato: {context_lines}, "
+        f"nome candidato identificato: {candidate_name}"
+    )
+
+    prompt = LLMHelper.create_prompt(context, user_question)
 
     messages = cl.user_session.get("messages", [])
     messages.append({"role": "user", "content": prompt})
