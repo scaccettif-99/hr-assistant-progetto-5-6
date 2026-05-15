@@ -79,7 +79,7 @@ async def handle_message(message: cl.Message):
         f"nome candidato identificato: {candidate_name}"
     )
 
-    prompt = LLMHelper.create_prompt(context, user_question)
+    prompt = LLMHelper.create_prompt(context, user_question, candidate_name)
 
     messages = cl.user_session.get("messages", [])
     messages.append({"role": "user", "content": prompt})
@@ -109,3 +109,61 @@ async def handle_message(message: cl.Message):
 @cl.on_chat_end
 def end():
     cl.Message(content="Grazie per aver utilizzato il nostro assistente. Buona giornata!").send()
+
+@cl.on_message
+async def handle_message(message: cl.Message):
+    print("🔵 1. Messaggio ricevuto:", message.content)
+    user_question = message.content
+    
+    print("🔵 2. Query al database...")
+    results = db.query(user_question)
+    print(f"🔵 3. Risultati trovati: {len(results['documents'])} documenti")
+    
+    filename = results["metadatas"][0][0]["source"]
+    print(f"🔵 4. File: {filename}")
+    
+    context_lines = DocumentProcessor.read_first_lines(
+        os.path.join(Config.DOCUMENTS_DIR, filename), 200
+    )
+    print("🔵 5. Context lines lette")
+    
+    print("🔵 6. Richiedo nome candidato...")
+    candidate_name = await LLMHelper.get_candidate_name(context_lines)
+    print(f"🔵 7. Nome candidato: {candidate_name}")
+    
+    context = (
+        f"CONTESTO: nome file {results['metadatas'][0][0]['source']} "
+        f"ecco il paragrafo piu' significativo: {results['documents'][0][0]}, "
+        f"ecco la parte iniziale del file con le informazioni del candidato: {context_lines}, "
+        f"nome candidato identificato: {candidate_name}"
+    )
+    
+    prompt = LLMHelper.create_prompt(context, user_question, candidate_name)
+    print("🔵 8. Prompt creato")
+    
+    messages = cl.user_session.get("messages", [])
+    messages.append({"role": "user", "content": prompt})
+    
+    response_message = cl.Message(content="")
+    await response_message.send()
+    
+    print("🔵 9. Avvio streaming...")
+    try:
+        stream = LLMHelper.chat(messages)
+        print("🔵 10. Stream ricevuto, inizio tokenizzazione...")
+
+        for chunk in stream:
+            await response_message.stream_token(
+                str(chunk.choices[0].delta.content or "")
+            )
+
+        messages.append({"role": "assistant", "content": response_message.content})
+        await response_message.update()
+        print("🔵 11. Risposta completata")
+
+    except Exception as e:
+        error_message = f"❌ Errore: {str(e)}"
+        await cl.Message(content=error_message).send()
+        print(error_message)
+
+    cl.user_session.set("messages", messages)

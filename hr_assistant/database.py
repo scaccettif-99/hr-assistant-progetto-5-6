@@ -1,20 +1,28 @@
 # database.py
 import chromadb
-from chromadb.utils import embedding_functions
 from config import Config
+from custom_embedding import CustomEmbeddingFunction
 
 
 class Database:
     def __init__(self):
-        self.openai_ef = embedding_functions.OpenAIEmbeddingFunction(
-            api_key=Config.OPENAI_KEY, model_name=Config.MODEL_NAME
-        )
-
-        # Inizializza il client persistente su disco
+        self.local_ef = CustomEmbeddingFunction()
         self.client = chromadb.PersistentClient(path=Config.PERSISTENT_DIR)
-        self.collection = self.client.get_or_create_collection(
-            name=Config.COLLECTION_NAME, embedding_function=self.openai_ef
-        )
+        
+        # Prova a ottenere la collection esistente
+        try:
+            # Se esiste, ottienila senza specificare embedding_function
+            self.collection = self.client.get_collection(
+                name=Config.COLLECTION_NAME
+            )
+            print(f"✓ Collection '{Config.COLLECTION_NAME}' caricata (embedding function esistente mantenuta)")
+        except Exception as e:
+            # Se non esiste, creala con la nuova embedding_function
+            print(f"✓ Creazione nuova collection '{Config.COLLECTION_NAME}'...")
+            self.collection = self.client.create_collection(
+                name=Config.COLLECTION_NAME,
+                embedding_function=self.local_ef,
+            )
 
     def add_documents(self, documents, metadatas, ids):
         self.collection.add(documents=documents, metadatas=metadatas, ids=ids)

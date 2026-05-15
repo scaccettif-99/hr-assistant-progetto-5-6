@@ -39,7 +39,7 @@ class DocumentProcessor:
             txt = file.read()
             # OLD 
             # chunks = file.read().replace("\n", ".").split("### ") --> separator based, ora siamo avanti con semantic
-            sc = SemanticChunking()
+            sc = SemanticChunking(70, 1)
             chunks = sc.chunk_text(txt)
             file_metadata = DocumentProcessor.get_document_metadata(file_path)
 
